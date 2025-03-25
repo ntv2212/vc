@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <svg
+      style="visibility: hidden; position: absolute"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+    >
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+    <main class="overflow-hidden w-full h-screen">
+      <div class="bg-[#029CF6] h-full relative">
+        <div class="flex h-full relative z-10">
+          <div class="w-1/2">a</div>
+          <div class="w-1/2 pl-[58px]">
+            <p
+              class="font-semibold text-[28px] leading-[44px] tracking-normal text-white mt-[156px] w-[352px]"
+            >
+              Tôi không nghĩ mình đang khác đi, bởi tôi là một người sống khá
+              đơn giản. Tôi biết những người yêu mến tôi là vì sự chân thật và
+              giản dị.
+            </p>
+            <p
+              class="font-bold text-[28px] tracking-[6%] uppercase text-[#FFDE05] mt-[222px]"
+            >
+              Thu Quỳnh
+            </p>
+            <p class="font-medium text-[18px] tracking-[6%] text-white">
+              Bác sĩ
+            </p>
+          </div>
+        </div>
+        <div
+          class="hex before:bg-[#032184] w-[110%] absolute top-[58%] left-1/2 translate-x-[-50%] opacity-30"
+        ></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hexagon {
+    width: 8rem; /* Tailwind w-32 equivalent */
+    height: 8rem; /* Tailwind h-32 equivalent */
+    background-color: #3b82f6; /* Tailwind bg-blue-500 equivalent */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 10px;
+}
+
+.hex {
+    display: inline-block;
+    filter: url('#goo');
+  }
+  
+  .hex::before {
+    content: "";
+    display: block;
+    padding-top: 115%; /* 100%/cos(30)  */
+    clip-path: polygon(0% 25%,0% 75%,50% 100%,100% 75%,100% 25%,50% 0%);
+  }
